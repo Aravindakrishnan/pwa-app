@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background: #16161a;
+}
+
+.todo__desc {
+    color: #fffffe; 
+    padding: 1rem 0;
+}
+
+/* alert */
+
+.alert {
+    padding: 1.2rem;
+    position: absolute;
+    top: -25%;
+    width: 100%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alert__icon {
+    font-size: 1.8rem;
+}
+
+.active {
+    top : 0%;
+}
+
+.danger {
+    background: rgb(255, 73, 73);
+    color: #fffffe;
+}
+.success {
+    background: rgb(198, 255, 181);
+    color: #0e0e0e;
+}
+.warning {
+    background: rgb(255, 206, 73);
+    color: #181818;
+}
+
+/* main */
+
+.navbar {
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__title {
+    color: #fffffe;
+}
+
+.clear__btn {
+    padding: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    flex-direction: column;
+}
+
+.todo__input {
+    width: 100%;
+}
+
+.todo__text , .todo__btn {
+    padding: 1.4rem;
+    font-size: 1.4rem;
+    width: 100%;
+}
+.todo__text {
+    background: rgb(32, 32, 32);
+    outline: none;
+    border: none;
+    color: #fffffe;
+}
+
+.todo__btn {
+    background: #6246ea;
+    color: #fffffe;
+    border: none;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+.todo__btn:active {
+    transform: scale(0.99);
+}
+
+/* todo cards */
+
+.todo__cards {
+    flex: 1;
+    color: #fffffe;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    margin: 0.8rem;
+}
+
+.todo__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem;
+   background: rgb(32, 32, 32);
+    margin: 0.8rem 0;
+    border-radius: 0.4rem;
+    margin: 0.4rem;
+}
+
+.btn {
+    margin-left: .4rem;
+    font-size: 1.4rem;
+    padding: 0.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: 0.1s ease-in;
+}
+.todo__update {
+    color: rgb(250, 255, 174);
+}
+.todo__delete {
+    color: rgb(255, 146, 146);
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+ion-icon {
+    display: block;
+}
