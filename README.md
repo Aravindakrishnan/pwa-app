@@ -2,4 +2,4 @@
 
 WeirdTodoApp for testing progressive web application using google workbox.
 
- [WeirdTodoApp_Web_Link](weirdtodoapp.netlify.app/)
+ [WeirdTodoApp_Web_Link](https://weirdtodoapp.netlify.app/)
