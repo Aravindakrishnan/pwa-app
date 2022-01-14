@@ -1,5 +1,5 @@
-# PWA-app (WeirdTodoApp)
+# PWA-app (TodoApp)
 
-WeirdTodoApp for testing progressive web application using google workbox.
+TodoApp for testing progressive web application using google workbox.
 
  [WeirdTodoApp_Web_Link](https://weirdtodoapp.netlify.app/)
