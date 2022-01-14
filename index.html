@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weird Todo-app🖌️</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <nav class="navbar">
+        <h4 class="navbar__title">Weird Todo-app</h4>
+        <button class="clear__btn">clear all</button>
+    </nav>
+
+    <main class="todo-container">
+        <section class="todo__input">
+            <input onclick="this.value=''" class="todo__text" type="text" placeholder="Type Something...">
+            <button onclick="fireIt()" class="todo__btn">Cook dish 🍣</button>
+            <p class="todo__desc">*Only CRD operations are allowed Coz it's weird todo app 🧐.</p>
+        </section>
+
+        <section class="todo__cards">
+            
+        </section>
+
+    </main>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./src/alert.js"></script>
+    <script src="./src/index.js"></script>
+    <script src="./src/app.js"></script>
+
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./service-worker.js');
+          });
+        }
+    </script>
+
+</body>
+</html>
