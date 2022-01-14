@@ -21,7 +21,7 @@ body {
 .alert {
     padding: 1.2rem;
     position: absolute;
-    top: -25%;
+    bottom: -25%;
     width: 100%;
     transition: 0.5s;
     display: flex;
@@ -34,7 +34,7 @@ body {
 }
 
 .active {
-    top : 0%;
+    bottom: 0%;
 }
 
 .danger {
